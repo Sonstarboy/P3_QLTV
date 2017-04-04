@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :readers
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :books
   resources :roles

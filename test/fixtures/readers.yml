@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code_card: MyString
+  name: MyString
+  birthday: 2017-04-04
+  phone: MyString
+  unit: MyString
+  start_date: 2017-04-04
+  end_date: 2017-04-04
+
+two:
+  code_card: MyString
+  name: MyString
+  birthday: 2017-04-04
+  phone: MyString
+  unit: MyString
+  start_date: 2017-04-04
+  end_date: 2017-04-04

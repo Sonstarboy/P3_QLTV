@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code card:</strong>
+  <%= @reader.code_card %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @reader.name %>
+</p>
+
+<p>
+  <strong>Birthday:</strong>
+  <%= @reader.birthday %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @reader.phone %>
+</p>
+
+<p>
+  <strong>Unit:</strong>
+  <%= @reader.unit %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @reader.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @reader.end_date %>
+</p>
+
+<%= link_to 'Edit', edit_reader_path(@reader) %> |
+<%= link_to 'Back', readers_path %>

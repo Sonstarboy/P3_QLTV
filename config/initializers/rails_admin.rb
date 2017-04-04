@@ -1,6 +1,6 @@
 RailsAdmin.config do |config|
   config.main_app_name = ["Quản lý thư viện HVKTQS", ""]
-  config.included_models = ["Book"]
+  config.included_models = ["Book","Reader"]
   ### Popular gems integration
 
   ## == Devise ==
