@@ -1,0 +1,23 @@
+<%= simple_form_for(@lending) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+
+    <%= f.association :book %>
+
+    <%= f.association :reader %>
+
+    <%= f.input :borrow_date %>
+
+    <%= f.input :appointment_date %>
+
+    <%= f.input :pay_date %>
+
+    <%= f.input :description %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
