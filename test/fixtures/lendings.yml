@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  book: one
+  reader: one
+  borrow_date: 2017-04-04
+  appointment_date: 2017-04-04
+  pay_date: 2017-04-04
+  description: MyText
+
+two:
+  book: two
+  reader: two
+  borrow_date: 2017-04-04
+  appointment_date: 2017-04-04
+  pay_date: 2017-04-04
+  description: MyText
