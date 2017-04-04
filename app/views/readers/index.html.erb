@@ -2,10 +2,11 @@
 
 <h1>Readers</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Code card</th>
+      <th>Avatar</th>
       <th>Name</th>
       <th>Birthday</th>
       <th>Phone</th>
@@ -20,6 +21,7 @@
     <% @readers.each do |reader| %>
       <tr>
         <td><%= reader.code_card %></td>
+        <td><%= image_tag reader.avatar.url(:thumb) %></td>
         <td><%= reader.name %></td>
         <td><%= reader.birthday %></td>
         <td><%= reader.phone %></td>

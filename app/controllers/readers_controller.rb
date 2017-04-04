@@ -69,6 +69,6 @@ class ReadersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def reader_params
-      params.require(:reader).permit(:code_card, :name, :birthday, :phone, :unit, :start_date, :end_date)
+      params.require(:reader).permit(:code_card, :name, :birthday, :phone, :unit, :start_date, :end_date, :avatar)
     end
 end

@@ -1,6 +1,7 @@
 RailsAdmin.config do |config|
   config.main_app_name = ["Quản lý thư viện HVKTQS", ""]
-  config.included_models = ["Book","Reader"]
+  #config.included_models = ["Book","Reader"]
+  config.excluded_models = ["User","Role"]
   ### Popular gems integration
 
   ## == Devise ==
@@ -32,6 +33,34 @@ RailsAdmin.config do |config|
       field :year_published
     end
   end
+
+
+  config.model 'Read' do
+    index do
+      field :code_card do
+        visible false
+      end
+      field :avartar do
+        visible false
+      end
+    end
+
+    exclude_fields :created_at
+    exclude_fields :updated_at
+  end
+
+  # config.model 'Read' do
+  #   list do
+  #     field :code_card
+  #     field :name
+  #     field :avartar
+  #     field :birthday
+  #     #field :phone
+  #     # field :unit
+  #     # field :start_date
+  #     # field :end_date
+  #   end
+  # end
 
   config.actions do
     dashboard                     # mandatory
