@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170404165004) do
+ActiveRecord::Schema.define(version: 20170404170534) do
 
   create_table "books", force: :cascade do |t|
     t.string   "isbn"
@@ -19,8 +19,12 @@ ActiveRecord::Schema.define(version: 20170404165004) do
     t.string   "publisher"
     t.integer  "year_published"
     t.text     "description"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   create_table "lendings", force: :cascade do |t|

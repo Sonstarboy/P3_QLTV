@@ -1,6 +1,6 @@
 class LendingsController < ApplicationController
   before_action :set_lending, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /lendings
   # GET /lendings.json
   def index

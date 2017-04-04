@@ -2,6 +2,10 @@ RailsAdmin.config do |config|
   config.main_app_name = ["Quản lý thư viện HVKTQS", ""]
   #config.included_models = ["Book","Reader"]
   config.excluded_models = ["User","Role"]
+  config.authenticate_with do
+    warden.authenticate! scope: :user
+  end
+  config.current_user_method(&:current_user)
   ### Popular gems integration
 
   ## == Devise ==
@@ -24,15 +28,16 @@ RailsAdmin.config do |config|
   ## == Gravatar integration ==
   ## To disable Gravatar integration in Navigation Bar set to false
   # config.show_gravatar true
-  config.model 'Book' do
-    list do
-      field :isbn
-      field :name
-      field :author
-      field :publisher
-      field :year_published
-    end
-  end
+  # config.model 'Book' do
+  #   list do
+  #     field :isbn
+  #     field :name
+  #     #field :avartar
+  #     field :author
+  #     field :publisher
+  #     field :year_published
+  #   end
+  # end
 
 
   config.model 'Read' do
